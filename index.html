@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odyssey | Extraordinary Adventures</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <i class='bx bx-compass'></i>
+                <span>Odyssey</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li class="nav-item"><a href="#experiences" class="nav-link">Experiences</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="login-link">Log In</a>
+                <a href="#" class="btn btn-solid">Book Now</a>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <i class='bx bx-grid-alt'></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section (Split Design) -->
+        <section class="hero" id="home">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <div class="pill-badge">
+                        <span class="dot"></span> Limitless Exploration
+                    </div>
+                    <h1 class="hero-title">Discover The World's Hidden <span class="text-accent">Wonders</span></h1>
+                    <p class="hero-desc">Curated travel experiences designed for the modern explorer. Uncover breathtaking destinations and create memories that last a lifetime.</p>
+                    
+                    <!-- Booking Form (Vertical/Card Style) -->
+                    <div class="booking-widget">
+                        <form class="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label><i class='bx bx-map'></i> Location</label>
+                                    <input type="text" placeholder="Where to?">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class='bx bx-calendar'></i> Dates</label>
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <div class="form-row form-row-bottom">
+                                <div class="form-group">
+                                    <label><i class='bx bx-user'></i> Travelers</label>
+                                    <select>
+                                        <option>1 Explorer</option>
+                                        <option selected>2 Explorers</option>
+                                        <option>3 Explorers</option>
+                                        <option>4+ Group</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-accent btn-large">
+                                    <i class='bx bx-search'></i> Explore
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder replaced with high-quality unsplash image -->
+                    <img src="hero_bg.png" alt="Scenic landscape" class="hero-img">
+                    <div class="floating-card">
+                        <div class="floating-icon"><i class='bx bx-check-shield'></i></div>
+                        <div>
+                            <h4>Verified Stays</h4>
+                            <p>100% Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations (Horizontal Scroll / Offset Grid) -->
+        <section class="destinations" id="destinations">
+            <div class="section-header">
+                <div class="header-text">
+                    <h2 class="section-title">Trending Destinations</h2>
+                    <p class="section-subtitle">Hand-picked locations for an unforgettable luxury experience.</p>
+                </div>
+                <div class="header-controls">
+                    <button class="slider-btn prev-btn"><i class='bx bx-left-arrow-alt'></i></button>
+                    <button class="slider-btn next-btn"><i class='bx bx-right-arrow-alt'></i></button>
+                </div>
+            </div>
+
+            <div class="destinations-track">
+                <!-- Card 1 -->
+                <article class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1552046122-03184de85e08?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Santorini">
+                        <span class="card-badge">Exclusive</span>
+                        <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="location"><i class='bx bx-map-pin'></i> Santorini, Greece</span>
+                            <span class="rating"><i class='bx bxs-star'></i> 4.9</span>
+                        </div>
+                        <h3 class="card-title">Aegean Paradise Escape</h3>
+                        <p class="card-desc">Iconic sunsets, pristine white architecture, and the azure Aegean sea.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-value">$3,500 <small>/couple</small></span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Itinerary</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bora Bora">
+                        <span class="card-badge bg-accent">Bestseller</span>
+                        <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="location"><i class='bx bx-map-pin'></i> Bora Bora</span>
+                            <span class="rating"><i class='bx bxs-star'></i> 5.0</span>
+                        </div>
+                        <h3 class="card-title">Polynesian Water Villas</h3>
+                        <p class="card-desc">Overwater luxury villas and vibrant coral reefs for ultimate relaxation.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-value">$5,200 <small>/couple</small></span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Itinerary</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Swiss Alps">
+                        <button class="wishlist-btn"><i class='bx bx-heart'></i></button>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="location"><i class='bx bx-map-pin'></i> Zermatt, Switzerland</span>
+                            <span class="rating"><i class='bx bxs-star'></i> 4.8</span>
+                        </div>
+                        <h3 class="card-title">Alpine Majesty Tour</h3>
+                        <p class="card-desc">Breathtaking alpine views, world-class skiing, and cozy chalets.</p>
+                        <div class="card-footer">
+                            <div class="price-box">
+                                <span class="price-label">Starting at</span>
+                                <span class="price-value">$4,100 <small>/couple</small></span>
+                            </div>
+                            <a href="#" class="btn btn-outline">View Itinerary</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experiences (Alternating Layout) -->
+        <section class="experiences" id="experiences">
+            <div class="experiences-inner">
+                <div class="exp-header text-center">
+                    <h2 class="section-title">The Odyssey Difference</h2>
+                    <p class="section-subtitle">Uncompromising quality and attention to detail in every journey.</p>
+                </div>
+                
+                <div class="exp-features">
+                    <!-- Feature 1 -->
+                    <div class="feature-row">
+                        <div class="feature-icon-large bg-primary-light">
+                            <i class='bx bx-buildings text-primary'></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Luxury Accommodations</h3>
+                            <p>Stay in world-renowned 5-star resorts, private villas, and exclusive boutique hotels hand-selected for their exceptional service and location.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="feature-row">
+                        <div class="feature-icon-large bg-accent-light">
+                            <i class='bx bx-restaurant text-accent'></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Fine Dining Experiences</h3>
+                            <p>Savor exquisite culinary experiences curated by Michelin-starred chefs globally. From private beach dinners to exclusive tasting menus.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="feature-row">
+                        <div class="feature-icon-large bg-dark-light">
+                            <i class='bx bx-car text-dark'></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Private Transfers & Jets</h3>
+                            <p>Enjoy seamless travel with our premium chauffeur, helicopter transfers, and private jet services ensuring you travel in utmost comfort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="exp-header text-center">
+                <h2 class="section-title">Guest Reflections</h2>
+                <p class="section-subtitle">Discover the extraordinary experiences of our esteemed travelers.</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-left text-primary'></i></div>
+                    <p class="review-text">"Our stay in Santorini was nothing short of magical. Every detail was flawlessly executed, allowing us to truly relax and immerse ourselves in the beauty."</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
+                        <div class="reviewer-info">
+                            <h4>Sarah Johnson</h4>
+                            <div class="rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-left text-accent'></i></div>
+                    <p class="review-text">"An impeccable journey through the Swiss Alps. The curated itinerary and the exclusive chalets made this a trip we will cherish forever."</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Michael Chen">
+                        <div class="reviewer-info">
+                            <h4>Michael Chen</h4>
+                            <div class="rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <div class="quote-icon"><i class='bx bxs-quote-left text-primary'></i></div>
+                    <p class="review-text">"Bora Bora was a dream. The service and attention to luxury standard provided by Odyssey was unparalleled. We cannot wait to book our next escape."</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Emma Davis">
+                        <div class="reviewer-info">
+                            <h4>Emma Davis</h4>
+                            <div class="rating"><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="exp-header text-center">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Connect with our concierges to begin planning your bespoke journey.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon bg-primary-light text-primary"><i class='bx bx-map'></i></div>
+                        <h4>Our Location</h4>
+                        <p>500 5th Ave, New York, NY</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon bg-accent-light text-accent"><i class='bx bx-phone'></i></div>
+                        <h4>Direct Line</h4>
+                        <p>+1 (800) 555-0199</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon bg-dark-light text-dark"><i class='bx bx-envelope'></i></div>
+                        <h4>Email Us</h4>
+                        <p>hello@odyssey.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="How can we assist you?" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-large" style="margin-top: 16px;">
+                            <i class='bx bx-send'></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo footer-logo">
+                    <i class='bx bx-compass'></i>
+                    <span>Odyssey</span>
+                </a>
+                <p class="footer-desc">Redefining luxury travel. Curating extraordinary experiences for the world's most discerning travelers.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Discover</h4>
+                    <ul class="footer-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#">Travel Journal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-list contact-list">
+                        <li><i class='bx bx-map'></i> 500 5th Ave, New York, NY</li>
+                        <li><i class='bx bx-phone'></i> +1 (800) 555-0199</li>
+                        <li><i class='bx bx-envelope'></i> hello@odyssey.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-heading">Insider Access</h4>
+                <p>Join our exclusive mailing list for private offers and travel inspiration.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Odyssey Premium Travel. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
